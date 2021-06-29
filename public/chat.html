@@ -13,22 +13,31 @@
 
 <body>
     <div class="container">
-        <h1>Login to start chatting</h1>
-        <form action="chat.html">
-            <div class="form-control">
-                <label for="username">Username</label>
-                <input type="text" name="username" id="username" placeholder="Enter username..." required />
+        <header>
+            <h1>Hello</h1>
+            <a id="leave-btn" class="btn btn-warning">Leave Room</a>
+          </header>
+          <main class="chat-main">
+            <div class="chat-sidebar">
+              <h3>Room Name:</h3>
+              <h2 id="room-name"></h2>
+              <h3>Connected Users</h3>
+              <ul id="users"></ul>
             </div>
-            <div class="form-control">
-                <label for="room">Room</label>
-                <select name="room" id="room">
-                    <option value="Frontend">Frontend</option>
-                    <option value="Backend">Backend</option>
-                    <option value="Quality Assurance">Quality Assurance</option>
-                </select>
-            </div>
-            <button type="submit" class="btn btn-info">Join Chat</button>
-        </form>
+            <div class="chat-messages"></div>
+          </main>
+          <div class="chat-form-container">
+            <form id="chat-form">
+              <input
+                id="msg"
+                type="text"
+                placeholder="Start typing..."
+                required
+                autocomplete="off"
+              />
+              <button class="btn btn-info">Send</button>
+            </form>
+          </div>
     </div>
 
 
