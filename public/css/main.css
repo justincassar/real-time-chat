@@ -1,5 +1,48 @@
-body{
-    background-color: #e9fff8;
-    margin-top:20px;
+html {
+    height: 100%;
 }
 
+body {
+    background: #0F2027;
+    background: -webkit-linear-gradient( #2C5364, #203A43, #0F2027);
+    background: linear-gradient(#2C5364, #203A43, #0F2027);
+    background-size: cover;
+    margin-top: 20px;
+}
+
+.chatbox-container {
+    margin: 0 auto;
+    width: 750px;
+    background: #eeeff1;
+    border-radius: 8px;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.users-box {
+    background: rgb(82, 82, 82);
+    padding-top: 5px;
+    padding-left: 15px;
+    width: 30%;
+    float: left;
+    color: white;
+}
+
+.user-list {}
+
+.user-avatar {
+    width: 50px;
+}
+
+.chat-input {
+    background-color: #f1f1f1ab;
+    padding: 10px;
+}
+
+.chat-box {
+    float: right;
+    background-color: rgb(255, 255, 255);
+    width: 70%;
+}
+
+.chat-message {}
